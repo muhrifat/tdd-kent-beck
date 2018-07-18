@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: mr8
  * Date: 18/07/18
- * Time: 13:40
+ * Time: 13:49
  */
 
 namespace TDD\MoneyExample;
@@ -20,6 +20,6 @@ class Dollar
 
     public function times(int $multiplier)
     {
-        $this->amount = $this->amount * $multiplier;
+        return new Dollar($this->amount * $multiplier);
     }
 }
