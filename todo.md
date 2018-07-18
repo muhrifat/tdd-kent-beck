@@ -10,9 +10,9 @@
 - [] Equal null
 - [] Equal object
 - [x] 5 CHF * 2 = 1- CHF    
-- [] Dollar/Franc duplication
+- [x] Dollar/Franc duplication
 - [x] Common equals
-- [] Common times
+- [x] Common times
 - [x] Franc != Dollar
 - [x] Currency?
 - [] Delete testFrancMultiplication

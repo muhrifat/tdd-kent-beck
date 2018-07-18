@@ -28,9 +28,6 @@ class MoneyExampleTest extends \BaseTest
         $this->assertEquals(Money::franc(15), $five->times(3));
     }
 
-    /*
-     * Test Equal
-     */
     public function testEquality()
     {
         $this->assertTrue((Money::dollar(5))->equals(Money::dollar(5)));
@@ -42,9 +39,6 @@ class MoneyExampleTest extends \BaseTest
         $this->assertFalse((Money::franc(5))->equals(Money::dollar(5)));
     }
 
-    /*
-     * Test currency
-     */
     public function testCurrency()
     {
         $this->assertEquals("USD", Money::dollar(1)->currency());

@@ -9,7 +9,7 @@
 namespace TDD\MoneyExample;
 
 
-abstract class Money
+class Money
 {
     protected $amount;
 
@@ -24,19 +24,23 @@ abstract class Money
     public function equals(Money $object)
     {
         $money = $object;
-        return $this->amount == $money->amount && get_class($this) == get_class($money);
+        return $this->amount == $money->amount && self::currency() == $money->currency();
     }
 
-    abstract function times(int $multiplier) : Money;
+//    abstract function times(int $multiplier) : Money;
+    public function times(int $multiplier)
+    {
+        return new Money($this->amount*$multiplier, $this->currency);
+    }
 
     static function dollar(int $amount) : Money
     {
-        return new Dollar($amount, "USD");
+        return new Money($amount, "USD");
     }
 
     static function franc(int $amount) : Money
     {
-        return new Franc($amount, "CHF");
+        return new Money($amount, "CHF");
     }
 
     public function currency() : string
