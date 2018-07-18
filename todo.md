@@ -11,4 +11,7 @@
 - [] Equal object
 - [x] 5 CHF * 2 = 1- CHF    
 - [] Dollar/Franc duplication
-- [] Common equals
+- [x] Common equals
+- [] common times
+- [x] Franc != Dollar
+- [] Currency?
