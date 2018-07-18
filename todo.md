@@ -9,6 +9,6 @@
 - [] HashCode()
 - [] Equal null
 - [] Equal object
-- [x] 5 CHF * 2 = 1- CHF
+- [x] 5 CHF * 2 = 1- CHF    
 - [] Dollar/Franc duplication
 - [] Common equals

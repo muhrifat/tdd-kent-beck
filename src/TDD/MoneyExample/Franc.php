@@ -9,10 +9,8 @@
 namespace TDD\MoneyExample;
 
 
-class Franc
+class Franc extends Money
 {
-    private $amount;
-
     public function __construct(int $amount)
     {
         $this->amount = $amount;
@@ -21,11 +19,5 @@ class Franc
     public function times(int $multiplier)
     {
         return new Franc($this->amount * $multiplier);
-    }
-
-    public function equals(Franc $object)
-    {
-        $dollar = $object;
-        return $this->amount == $dollar->amount;
     }
 }

@@ -35,5 +35,8 @@ class MoneyExampleTest extends \BaseTest
     {
         $this->assertTrue((new Dollar(5))->equals(new Dollar(5)));
         $this->assertFalse((new Dollar(5))->equals(new Dollar(6)));
+
+        $this->assertTrue((new Franc(5))->equals(new Franc(5)));
+        $this->assertTrue((new Franc(6))->equals(new Franc(6)));
     }
 }
