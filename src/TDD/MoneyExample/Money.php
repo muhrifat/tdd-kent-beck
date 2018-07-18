@@ -9,7 +9,7 @@
 namespace TDD\MoneyExample;
 
 
-class Money
+abstract class Money
 {
     protected $amount;
 
@@ -17,5 +17,17 @@ class Money
     {
         $money = $object;
         return $this->amount == $money->amount && get_class($this) == get_class($money);
+    }
+
+    abstract function times(int $multiplier) : Money;
+
+    static function dollar(int $amount) : Money
+    {
+        return new Dollar($amount);
+    }
+
+    static function franc(int $amount) : Money
+    {
+        return new Franc($amount);
     }
 }
