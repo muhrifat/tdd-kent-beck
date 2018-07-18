@@ -1,7 +1,7 @@
-
 # Created by https://www.gitignore.io/api/vim,laravel,phpstorm,visualstudiocode
 
 ### Laravel ###
+
 vendor/
 node_modules/
 npm-debug.log
