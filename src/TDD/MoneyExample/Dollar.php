@@ -11,7 +11,7 @@ namespace TDD\MoneyExample;
 
 class Dollar
 {
-    public $amount;
+    private $amount;
 
     public function __construct(int $amount)
     {
@@ -21,5 +21,11 @@ class Dollar
     public function times(int $multiplier)
     {
         return new Dollar($this->amount * $multiplier);
+    }
+
+    public function equals(Dollar $object)
+    {
+        $dollar = $object;
+        return $this->amount == $dollar->amount;
     }
 }

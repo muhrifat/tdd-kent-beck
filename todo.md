@@ -5,3 +5,7 @@
 - [ ] make amount private
 - [ ] dollar side effect
 - [ ] money rounding?
+- [] equals
+- [] HashCode()
+- [] Equal null
+- [] Equal object

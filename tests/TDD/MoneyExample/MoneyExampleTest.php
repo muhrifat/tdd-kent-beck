@@ -22,4 +22,13 @@ class MoneyExampleTest extends \BaseTest
         $product = $five->times(3);
         $this->assertEquals(15, $product->amount);
     }
+
+    /*
+     * Test Equal
+     */
+    public function testEquality()
+    {
+        $this->assertTrue((new Dollar(5))->equals(new Dollar(5)));
+        $this->assertFalse((new Dollar(5))->equals(new Dollar(6)));
+    }
 }
