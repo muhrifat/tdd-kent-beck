@@ -14,5 +14,5 @@
 - [x] Common equals
 - [] Common times
 - [x] Franc != Dollar
-- [] Currency?
+- [x] Currency?
 - [] Delete testFrancMultiplication
